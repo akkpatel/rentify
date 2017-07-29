@@ -1,4 +1,4 @@
-# SubmittalProcess
+# Renitfy
 
 ## Requirements
 
