@@ -7,27 +7,28 @@
         .module('clientApp')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$state', 'LoginService'];
-    function LoginController($state, LoginService) {
-        console.log('I am in login controller');
-        var vm = this;
+    LoginController.$inject = ['$scope', '$state', 'LoginService'];
+    function LoginController($scope, $state, LoginService) {
+        
+        $scope.name = 'Company Name';
 
-        vm.credentials = {
+        $scope.credentials = {
             username: null,
             password: null
         };
 
-        vm.onSubmit = function()
+        $scope.onSubmit = function()
         {
-            var authenticated = LoginService.authenticate(vm.credentials.username, vm.credentials.password);
+            var authenticated = LoginService.authenticate($scope.credentials.username, $scope.credentials.password);
             if(authenticated)
             {
                 $state.go('home');
             }else
             {
-                console.log('you have entered invalid response');
+                console.log('You have entered an invalid username and password');
             }
         }
+        
     }
 })();
     /* jshint ignore:end */

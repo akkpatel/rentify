@@ -23,7 +23,19 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header" ui-view="header">
+    <div class="grid-frame">
+      <div class="grid-block vertical">
+        <div ui-view="header" class="header"></div>
+        <div class="align-center main-content-container">
+          <div id="wrapper" class="grid-block primary-view align-center ui-animation bounceIn" ui-view="content"></div>
+        </div>
+        <div ui-view="feedback" class="feedback"></div>
+        <div ui-view="footer"></div>
+      </div>
+
+    </div>
+
+<!--     <div class="header" ui-view="header">
       <div class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
 
@@ -52,7 +64,7 @@
     <div class="footer" ui-view="footer">
       <div class="container">
       </div>
-    </div>
+    </div> -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

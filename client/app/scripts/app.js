@@ -20,16 +20,21 @@ angular
     $stateProvider
       .state('login', {
         url: '/login',
-        templateUrl: 'views/login.html',
-        controller: 'LoginController',
-        controllerAs: 'vm'
+        views: {
+            'content@': {
+                templateUrl: 'views/login.html',
+                controller: 'LoginController'
+            }
+        }
     })
     .state('home', {
       url: '/home',
-      templateUrl: 'views/main.html',
-      controller: 'MainCtrl',
-      controllerAs: 'main'
-          
+      views: {
+        'content@': {
+          templateUrl: 'views/main.html',
+          controller: 'MainCtrl'
+        }
+      }   
     });
   $urlRouterProvider.otherwise('/');
   $urlRouterProvider.when('/', ['$state','TokenService' ,
