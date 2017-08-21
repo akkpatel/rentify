@@ -35,10 +35,6 @@ angular
                 templateUrl: 'views/header.html',
                 controller: 'HeaderController'
             }
-            // 'content@': {
-            //     templateUrl: 'app/home.html',
-            //     controller: 'HomeController'
-            // }
         },
         navigation : {
             // tools : globalTools
@@ -53,6 +49,24 @@ angular
           controller: 'MainCtrl'
         }
       }   
+    })
+    .state('errorPage', {
+      url: '/error',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/error.html'
+        }
+      }
+    })
+    .state('admin',{
+      url: '/admin',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/admin.html'
+        }
+      }
     });
   $urlRouterProvider.otherwise('/');
   $urlRouterProvider.when('/', ['$state','TokenService' ,
