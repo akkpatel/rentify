@@ -34,6 +34,9 @@ angular
             'header@': {
                 templateUrl: 'views/header.html',
                 controller: 'HeaderController'
+            },
+            'footer@': {
+                templateUrl:'views/footer.html'
             }
         },
         navigation : {
@@ -65,6 +68,51 @@ angular
       views: {
         'content@': {
           templateUrl: 'views/admin.html'
+        }
+      }
+    })
+    .state('contactus',{
+      url:'/contactus',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/contactus.html'
+        }
+      }
+    })
+    .state('aboutus',{
+      url: '/aboutus',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/aboutus.html'
+        }
+      }
+    })
+    .state('faq',{
+      url:'/faq',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/faq.html'
+        }
+      }
+    })
+    .state('terms',{
+      url:'/terms',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/terms.html'
+        }
+      }
+    })
+    .state('privacy',{
+      url: '/privacy',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/privacy.html'
         }
       }
     });
