@@ -34,7 +34,6 @@ html, body {
 .main-content-container {
     //overflow-y: auto !important;
     flex: 2 0 auto;
-    margin-top: 108px;
 
     .primary-view {
         width: 100%;
@@ -48,8 +47,6 @@ html, body {
 
 /* Custom page header */
 .header {
-  margin-bottom: 10px;
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -57,6 +54,9 @@ html, body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+.navbar{
+  margin-bottom: 0px !important;
 }
 
 /* Custom page footer */

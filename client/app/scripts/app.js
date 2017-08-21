@@ -27,8 +27,26 @@ angular
             }
         }
     })
+    .state('root', {
+        url: '',
+        abstract: true,
+        views: {
+            'header@': {
+                templateUrl: 'views/header.html',
+                controller: 'HeaderController'
+            }
+            // 'content@': {
+            //     templateUrl: 'app/home.html',
+            //     controller: 'HomeController'
+            // }
+        },
+        navigation : {
+            // tools : globalTools
+        }
+    })
     .state('home', {
       url: '/home',
+      parent: 'root',
       views: {
         'content@': {
           templateUrl: 'views/main.html',
