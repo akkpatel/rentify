@@ -58,5 +58,14 @@ $login-input-border-radius: 4px;
 				font-size: 34px;
 			}	
 		}
+
+		.new-user{
+			text-align: center;
+			margin-top: 40px;
+			&:after{
+				content: "";
+				border-top: 1px solid #e7e7e7;
+			}
+		}
 	}
 }
