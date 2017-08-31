@@ -37,6 +37,9 @@ module.exports = function(config) {
       'bower_components/hammerjs/hammer.js',
       'bower_components/foundation-apps/dist/js/foundation-apps.js',
       'bower_components/foundation-apps/dist/js/foundation-apps-templates.js',
+      'bower_components/angular-foundation-6/dist/angular-foundation.js',
+      'bower_components/what-input/dist/what-input.js',
+      'bower_components/foundation-sites/dist/js/foundation.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

@@ -12,9 +12,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <!-- endbuild -->
   </head>
@@ -98,19 +100,29 @@
     <script src="bower_components/hammerjs/hammer.js"></script>
     <script src="bower_components/foundation-apps/dist/js/foundation-apps.js"></script>
     <script src="bower_components/foundation-apps/dist/js/foundation-apps-templates.js"></script>
+    <script src="bower_components/angular-foundation-6/dist/angular-foundation.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+
+        <!-- Directives -->
+        <script src="scripts/directives/searchBar.directive.js"></script>
+
+        <!-- Services -->
+        <script src="scripts/services/login.service.js"></script>
+        <script src="scripts/services/localStorage.provider.js"></script>
+        <script src="scripts/services/token.service.js"></script>
+        
+        <!--Controller -->
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/login.controller.js"></script>
         <script src="scripts/controllers/header.controller.js"></script>
-        <script src="scripts/services/login.service.js"></script>
-        <script src="scripts/services/localStorage.provider.js"></script>
-        <script src="scripts/services/token.service.js"></script>
-        <script src="scripts/directives/searchBar.directive.js"></script>
+        <script src="scripts/controllers/addressForm.modal.controller.js"></script>
 
         <script src="scripts/constants/constants.js"></script>
         <!-- endbuild -->

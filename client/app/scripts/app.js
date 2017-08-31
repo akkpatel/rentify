@@ -14,7 +14,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ui.router'
+    'ui.router',
+    'mm.foundation'
   ])
   .config(function ($routeProvider, $stateProvider, $urlRouterProvider) {
     $stateProvider

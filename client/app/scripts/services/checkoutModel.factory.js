@@ -21,7 +21,6 @@
 
         var ShippingInfoModel = function (user) {
             this.address = new Address(user);
-            this.method = {};
         };
         var PaymentInfoModel = function () {
             this.creditCard = {
