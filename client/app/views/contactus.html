@@ -1,3 +1,29 @@
-<div class="grid-block" id="login">
-    <span style="color: white">Contact Us</span>
-</div>
+<ng-form class="contact-form " name="contact-us">
+  <div class="fieldset grid-block vertical large-12">
+    <div class="modal-title grid-block large-12">
+      <span>CONTACT US</span>
+    </div>
+    <div class="required grid-block large-12">
+      <span>*required</span>
+    </div>
+    <div class="field long grid-block vertical large-12">
+      <label for="name">Name *</label>
+      <input type="text" id="name" ng-model="model.name" />
+    </div>
+     <div class="field long grid-block vertical large-12">
+      <label for="address">Email Address *</label>
+      <input type="text" id="address" ng-model="model.address" />
+    </div>
+    <div class="field medium grid-block vertical large-12">
+      <label for="city">Message *</label>
+      <input type="text" id="country" ng-model="model.country" />
+    </div>
+    <div class="field grid-block vertical large-12">
+      <label for="city">Phone Number </label>
+      <input type="text" id="phoneNum" ng-model="model.phoneNum" />
+    </div>
+     <div class="dataActions grid-block">
+      <button class="button small-12">Send Message</button>
+    </div>
+  </div>
+</ng-form>
