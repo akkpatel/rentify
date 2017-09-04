@@ -1,0 +1,40 @@
+.bold{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  	font-style: bold;
+}
+
+
+.title
+{
+  font-size: 50px;
+  color: white;
+  justify-content: center;
+  @extend .bold;
+}
+
+.sub-title
+{
+  font-size: 28px;
+  color: white;
+  justify-content: left;
+  @extend .bold;
+  padding-left: 0.5rem;
+}
+
+.sub-sub-title
+{
+  font-size: 20px;
+  color: white;
+  justify-content: left;
+  padding-left: 1.8rem;
+}
+
+.image
+{
+  background: no-repeat center;
+  background-size: 175px;
+  width: 150px;
+  height: 75px;
+  background-color: black;
+  border: 1px solid black;
+}
