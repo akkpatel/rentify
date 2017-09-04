@@ -77,7 +77,8 @@ angular
       parent: 'root',
       views: {
         'content@': {
-          templateUrl: 'views/contactus.html'
+          templateUrl: 'views/contactus.html',
+          controller: 'contactCtrl'
         }
       }
     })
@@ -105,6 +106,15 @@ angular
       views: {
         'content@': {
           templateUrl: 'views/terms.html'
+        }
+      }
+    })
+    .state('sent',{
+      url:'/sent',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/sent.html'
         }
       }
     })

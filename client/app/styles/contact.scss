@@ -1,6 +1,6 @@
 //Modal css
 
-$client-text: #0A7B1C1;
+$client-text: white;
 
 .address {
   font-size: 1.8rem;
@@ -18,14 +18,14 @@ $client-text: #0A7B1C1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px;
-    margin: 0;
+    padding: 10px;
+    margin: 10;
     font-size: 20px;
     line-height: 2rem;
-    background-color: #D1C63F;
+    background-color: #4286F4;
     color: #FFFFFF;
     height: 40px;
-    margin-top: 15px;
+    margin-top: 5px;
     &:active {
       background-color: transparent;
       color: $client-text;
@@ -35,33 +35,35 @@ $client-text: #0A7B1C1;
   {
     background-color: black;
   }
-  .cancel-button
-  {
-    background-color: #D8D8D8;
-    color: #323531;
-  }
   input[type="text"]
   {
     height: 2.2rem;
     margin-bottom: 3.2px;
     color: #323531;
-    font-size: 20px;
+    font-size: 15px;
+  }
+  textarea[type="text2"]
+  {
+    height: 5.2rem;
+    margin-bottom: 3.2px;
+    color: #323531;
+    font-size: 15px;
   }
   .bold
   {
     font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    color: #333333;
+    color: white;
   }
   .required
   {
     display: flex;
     justify-content: flex-end;
-    color: #D0021b;
+    color: red;
   }
   .modal-title
   {
     @extend .bold;
-    font-size: 28px;
+    font-size: 50px;
   }
   .account-header
   {
@@ -78,12 +80,12 @@ $client-text: #0A7B1C1;
   {
     .columns
     {
-      padding: 0px;
+      padding: 10px;
     }
   }
 }
 
-.add-address-modal
+.contact-us-modal
 {
   width: 461px;
   height: 746px;
