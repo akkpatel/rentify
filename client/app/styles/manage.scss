@@ -1,0 +1,68 @@
+.bold{
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  	font-style: bold;
+}
+
+
+.title
+{
+  font-size: 50px;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  @extend .bold;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.mid-title{
+  font-size: 28px;
+  color: black;
+  @extend .bold;
+  justify-content: center;
+  align-self: center;
+  background: lightblue;
+}
+
+.sub-title
+{
+  font-size: 28px;
+  color: black;
+  justify-content: left;
+  @extend .bold;
+  padding-left: 0.5rem;
+  padding-bottom: 10px;
+}
+
+.sub-sub-title
+{
+  font-size: 20px;
+  color: blacks;
+  justify-content: left;
+  padding-left: 1.8rem;
+  padding-bottom: 10px;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+.tab button {
+    background-color: lightblue;
+    float: left;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.2s;
+    justify-content: center;
+    margin-right: 1px;
+}
+
+.tabs-title{
+  backround-color: lightblue;
+  color: black;
+  
+}

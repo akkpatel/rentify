@@ -1,6 +1,6 @@
 //Modal css
 
-$client-text: white;
+$client-text: black;
 
 .address {
   font-size: 1.8rem;
@@ -22,10 +22,11 @@ $client-text: white;
     margin: 10;
     font-size: 20px;
     line-height: 2rem;
-    background-color: #4286F4;
-    color: #FFFFFF;
+    background-color: black;
+    color: white;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 0px;
+    text-align: center;
     &:active {
       background-color: transparent;
       color: $client-text;
@@ -52,7 +53,8 @@ $client-text: white;
   .bold
   {
     font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    color: white;
+    color: black;
+    text-style: bold;
   }
   .required
   {
