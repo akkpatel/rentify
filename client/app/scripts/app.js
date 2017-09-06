@@ -126,6 +126,16 @@ angular
           templateUrl: 'views/privacy.html'
         }
       }
+    })
+    .state('manage',{
+      url:'/manage',
+      parent: 'root',
+      views: {
+        'content@':{
+          templateUrl:'views/manage.html',
+          controller:'manageCtrl'
+        }
+      }
     });
   $urlRouterProvider.otherwise('/');
   $urlRouterProvider.when('/', ['$state','TokenService' ,
