@@ -4,7 +4,7 @@
 }
 
 
-.title
+.title3
 {
   font-size: 50px;
   color: black;
@@ -16,7 +16,7 @@
 }
 
 .mid-title{
-  font-size: 28px;
+  font-size: 20px;
   color: black;
   @extend .bold;
   justify-content: center;
@@ -24,29 +24,52 @@
   background: lightblue;
 }
 
-.sub-title
+.sub-title3
 {
-  font-size: 28px;
+  font-size: 15px;
   color: black;
-  justify-content: left;
+  justify-content: center;
   @extend .bold;
-  padding-left: 0.5rem;
-  padding-bottom: 10px;
 }
 
-.sub-sub-title
+.sub-sub-title3
 {
   font-size: 20px;
   color: blacks;
   justify-content: left;
   padding-left: 1.8rem;
   padding-bottom: 10px;
+  line-height: 2rem;
+  height: 20px;
 }
 
 .tab {
     overflow: hidden;
     background-color: lightblue;
     justify-content: center;
+}
+
+
+.button{
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  border: black 1px solid;
+  position: relative;
+  padding: 0px;
+  margin-top: 0px;
+  &:active {
+  background-color: lightblue;
+  color: black;
+  }
+}
+
+input[type="radio"]{
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 0px;
 }
 
 .tab button {
