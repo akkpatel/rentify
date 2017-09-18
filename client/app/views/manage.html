@@ -1,5 +1,39 @@
 <div ng-controller="manageCtrl">
-<div class="title">Manage My Account</div>
+<div class="title3">Manage My Account</div>
 <tabset class="mid-title grid block">
-    <tab class="mid-title grid-block" ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active">{{tab.content}}</tab>
+    <tab>
+        <tab-heading class="mid-title">Change Profile</tab-heading>
+        <div class="sub-title3 grid-block"> Name</div>
+        <div class="sub-title3 grid-block"> Address </div>
+        <div class="sub-title3 grid-block"> Phone Number</div>
+        <div class="sub-title3 grid-block"> Email Address </div>
+      </tab>
+      <tab>
+        <tab-heading class="mid-title">Change Payment</tab-heading>
+        <div class="sub-title3 grid-block">
+        <div class="sub-title3 grid-block"> Card Number</div>
+        <div class="sub-title3 grid-block"> Card Type</div>
+        <button name="Edit" class="button grid-block">Edit Card</button>
+        <button name="Delete" class="button grid-block">Delete Card</button>
+        <input type="radio" name="Default" class="radio grid-block">Default Card</input>
+        </div>
+      </tab>
+      <tab>
+        <tab-heading class="mid-title">Deals and Referrals</tab-heading>
+        <div class="sub-title3 grid-block"> Deal 1</div>
+        <div class="sub-title3 grid-block"> Deal 2 </div><br/><br/>
+        <div class="sub-title3 grid-block"> Refer Friends</div>
+        <div class="sub-title3 grid-block">
+        <label class="sub-title3 grid-block">Name: </label>
+        <input type="text" id="friendname" ng-model="model.friendname" placeholder="Name" class="grid-block"/>
+        </div>
+        <div class="field grid-block">
+        <label class="sub-title3 grid-block">Email Address: </label>
+        <input type="text" id="friendemail" ng-model="model.friendemail" placeholder="Email" class="grid-block"/>
+        </div>
+        <div class="sub-title3 grid-block">
+        <button name="Refer" class="button grid-block">Refer</button>
+        </div>
+      </tab>
+</tabset>
 </div>
