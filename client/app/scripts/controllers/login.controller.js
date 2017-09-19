@@ -10,7 +10,7 @@
     LoginController.$inject = ['$scope', '$state', 'LoginService'];
     function LoginController($scope, $state, LoginService) {
         
-        $scope.name = 'Company Name';
+        $scope.name = 'Rentify';
 
         $scope.credentials = {
             username: null,

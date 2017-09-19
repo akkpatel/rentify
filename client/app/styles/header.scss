@@ -11,10 +11,17 @@
 }
 .navbar{
   margin-bottom: 0px !important;
+  background-color: rgba(61, 155, 233, 1);
+  margin-bottom: 15px auto;
+  opacity: 1;
+
 }
 
 .navbar-header{
   Width: 100%;
+  background-color: rgba(61, 155, 233, 1);
+  margin-bottom: 15px auto;
+  opacity: 1;
   .right-side{
     float: right;
   }
@@ -22,6 +29,7 @@
 
 .searchBar{
   padding-top: 7px;
+  opacity: 1;
 }
 
 .searchButton
@@ -32,10 +40,12 @@
   height: 38px;
   background-color: black;
   border: 1px solid black;
+  opacity: 1;
 }
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: lightblue;
+  opacity: 1;
 }

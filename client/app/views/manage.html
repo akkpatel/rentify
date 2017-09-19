@@ -1,5 +1,52 @@
-<div ng-controller="manageCtrl">
-<div class="title">Manage My Account</div>
-<tabset class="mid-title grid block">
-    <tab class="mid-title grid-block" ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active">{{tab.content}}</tab>
+<div ng-controller= "manageCtrl">
+	<div class="title3">
+		Manage My Account
+	</div>
+	<div class="align-left small-6 vertical">
+	<ul class="block-list" ng-model="myVar">
+<!-- With a label -->
+		<li class="with-chevron">
+			<button value="profile">Manage Profile</button>
+		</li>
+		<li class="with-chevron">
+			<button value="payment">Manage Payments</button>
+		</li>
+		<li class="with-chevron">
+			<button value="deal">Deals and Referrals</button>
+		</li>
+		<li class="with-chevron">
+			<button value="message">Messages</button>
+		</li>
+		<li class="with-chevron">
+			<button value="listing">Listings</button>
+		</li>
+	</ul>
+	</div>
+	<div ng-switch on="myVar">
+		<div ng-switch-when="profile">Profile</div>
+		<div ng-switch-when="payment">Payment</div>
+		<div ng-switch-when="deal">Deals</div>
+		<div ng-switch-when="message">Messages</div>
+		<div ng-switch-when="listing">Listings</div>
+	</div>
 </div>
+
+
+<!-- <div class="grid-block small-6 align-left vertical">
+	<div class="small-6 grid-block">
+		Manage Profile
+		<manage-profile ng-switch-when="Mange"></manage-profile>
+	</div>
+	<div class="small-6 grid-block">
+		Manage Payments
+	</div>
+	<div class="small-6 grid-block">
+		Deals and Referrals
+	</div>
+	<div class="small-6 grid-block">
+		Messages
+	</div>
+	<div class="small-6 grid-block">
+		Listing
+	</div>
+</div> -->
