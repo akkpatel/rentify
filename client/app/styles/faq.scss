@@ -1,10 +1,13 @@
 .bold{
-	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  	font-style: bold;
+	ffont-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 
-.title
+.title2
 {
   font-size: 50px;
   color: black;
@@ -12,7 +15,7 @@
   @extend .bold;
 }
 
-.sub-title
+.sub-title2
 {
   font-size: 28px;
   color: black;
@@ -21,7 +24,7 @@
   padding-left: 0.5rem;
 }
 
-.sub-sub-title
+.sub-sub-title2
 {
   font-size: 20px;
   color: black;
@@ -29,7 +32,7 @@
   padding-left: 1.8rem;
 }
 
-.sub-sub-sub-title
+.sub-sub-sub-title2
 {
   font-size: 20px;
   color: black;

@@ -1,10 +1,29 @@
 .bold{
-	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  	font-style: bold;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
+.block-list{
+  @extend .bold;
+  $offset: 1rem;
+  justify-content: left;
+  align-text: left;
+  align-items: left;
+}
 
-.title
+.with-chevron{
+  @extend .bold;
+  $left-class: left;
+  $offset: 1rem;
+  justify-content: left;
+  align-text: left;
+  align-items: left;
+}
+
+.title3
 {
   font-size: 50px;
   color: black;
@@ -15,7 +34,7 @@
   margin-bottom: 15px;
 }
 
-.mid-title{
+.mid-title3{
   font-size: 28px;
   color: black;
   @extend .bold;
@@ -24,7 +43,7 @@
   background: lightblue;
 }
 
-.sub-title
+.sub-title3
 {
   font-size: 28px;
   color: black;
@@ -34,7 +53,7 @@
   padding-bottom: 10px;
 }
 
-.sub-sub-title
+.sub-sub-title3
 {
   font-size: 20px;
   color: blacks;
