@@ -3,50 +3,18 @@
 		Manage My Account
 	</div>
 	<div class="align-left small-6 vertical">
-	<ul class="block-list" ng-model="myVar">
+	<ul class="block-list">
 <!-- With a label -->
-		<li class="with-chevron">
-			<button value="profile">Manage Profile</button>
-		</li>
-		<li class="with-chevron">
-			<button value="payment">Manage Payments</button>
-		</li>
-		<li class="with-chevron">
-			<button value="deal">Deals and Referrals</button>
-		</li>
-		<li class="with-chevron">
-			<button value="message">Messages</button>
-		</li>
-		<li class="with-chevron">
-			<button value="listing">Listings</button>
+		<li class="with-chevron" ng-repeat="item in items">
+			<button ng-click="updateChoice(item)">{{item.name}}</button>
 		</li>
 	</ul>
 	</div>
-	<div ng-switch on="myVar">
-		<div ng-switch-when="profile">Profile</div>
-		<div ng-switch-when="payment">Payment</div>
-		<div ng-switch-when="deal">Deals</div>
-		<div ng-switch-when="message">Messages</div>
-		<div ng-switch-when="listing">Listings</div>
+	<div ng-switch="selection">
+		<div ng-switch-when="Profile">Profile</div>
+		<div ng-switch-when="Payment">Payment</div>
+		<div ng-switch-when="Deal">Deals</div>
+		<div ng-switch-when="Message">Messages</div>
+		<div ng-switch-when="Listing">Listings</div>
 	</div>
 </div>
-
-
-<!-- <div class="grid-block small-6 align-left vertical">
-	<div class="small-6 grid-block">
-		Manage Profile
-		<manage-profile ng-switch-when="Mange"></manage-profile>
-	</div>
-	<div class="small-6 grid-block">
-		Manage Payments
-	</div>
-	<div class="small-6 grid-block">
-		Deals and Referrals
-	</div>
-	<div class="small-6 grid-block">
-		Messages
-	</div>
-	<div class="small-6 grid-block">
-		Listing
-	</div>
-</div> -->
