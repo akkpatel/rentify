@@ -1,19 +1,4 @@
 <div class="grid-block" id="login">
-    <div class="login-container">
-        <div class="login-name">
-            {{name}}
-        </div>
-        <div class="login-username">
-            <input required ng-model="credentials.username" type="text" placeholder="Username">
-        </div>
-        <div class="login-password">
-            <input required ng-model="credentials.password" type="password" placeholder="Password">
-        </div>
-        <div class="login-button">
-            <button ng-click="onSubmit()">Sign In</button>
-        </div>
-        <div class="new-user">
-            <h5>New To Rentify</h5>
-        </div>
-    </div>
+    <existing-user ng-show="user_switch"></existing-user>
+    <register-user ng-show="!user_switch"></register-user>
 </div>

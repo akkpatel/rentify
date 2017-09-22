@@ -17,6 +17,12 @@
             password: null
         };
 
+        $scope.user_switch = true;
+
+        $scope.pageSwitch = function(exor)
+        {
+            $scope.user_switch = !exor;
+        }
         $scope.onSubmit = function()
         {
             var authenticated = LoginService.authenticate($scope.credentials.username, $scope.credentials.password);
