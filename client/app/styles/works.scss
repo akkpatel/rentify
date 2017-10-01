@@ -1,0 +1,17 @@
+.works{
+	width: 100%;
+	.work-title{
+		font-size: 22px;
+		font-weight: bold;
+	}
+	.work-main-text{
+		@extend .work-title;
+		color: white;
+		background-color: black;
+		border: 1px solid red;
+		
+		.span{
+			text-align: center;
+		}
+	}
+}

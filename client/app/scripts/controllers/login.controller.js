@@ -14,10 +14,29 @@
 
         $scope.credentials = {
             username: null,
-            password: null
+            password: null,
+            email: null,
+            rePassword: null            
         };
 
-        $scope.onSubmit = function()
+        $scope.user_switch = true;
+
+
+        function resetCredentials()
+        {
+            $scope.credentials = {
+                username: null,
+                password: null,
+                email: null,
+                rePassword: null
+            };
+        }
+        $scope.pageSwitch = function(exor)
+        {
+            resetCredentials();
+            $scope.user_switch = !exor;
+        }
+        $scope.signIn = function()
         {
             var authenticated = LoginService.authenticate($scope.credentials.username, $scope.credentials.password);
             if(authenticated)
@@ -27,6 +46,18 @@
             {
                 console.log('You have entered an invalid username and password');
             }
+        }
+
+        /** 
+        ** Inside this function there should be a post call to Register User
+        ** Our post call should take in three parameters
+        ** UserName: String
+        ** Password: Encrypted string
+        ** email: String
+        **/ 
+        $scope.registerUser = function()
+        {
+
         }
         
     }

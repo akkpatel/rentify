@@ -14,7 +14,7 @@ $login-input-border-radius: 4px;
 
     .login-container{
 		width: 656px;
-		height: 536px;
+		height: 600px;
 		background-color: $login-container-primary;
 		margin: auto;
 
@@ -62,10 +62,75 @@ $login-input-border-radius: 4px;
 		.new-user{
 			text-align: center;
 			margin-top: 40px;
-			&:after{
-				content: "";
-				border-top: 1px solid #e7e7e7;
-			}
+			h5 {
+   				width:423px; 
+   				text-align:center; 
+   				border-bottom: 1px solid #000; 
+   				line-height:0.1em; 
+   				
+   				margin-left: auto;
+    			margin-right: auto;
+   			} 
+   			h5 span { 
+   				background:#4594BF; 
+   				padding:0 10px; 
+   			}
 		}
 	}
+}
+
+.register-button{
+	text-align: center;
+	margin-top: 0px !important;
+	height: 15px;
+	.new-user-button{
+		font-size: 22px !important;
+		width: 100%;
+		height: 45px;
+		margin-top:30px;
+	}
+}
+.conditions{
+	height: 5px;
+}
+
+.go-back{
+	@extend .register-button;
+	cursor: pointer;
+}
+
+.register-container{
+	width: 656px;
+	height: 700px;
+	background-color: $login-container-primary;
+	padding: 20px 45px 20px 45px;
+
+	.header{
+		font-size: 30px;
+		color: white;
+		height: 2px;
+	}
+
+	.register-data{
+		height: 15px;
+	}
+	input {
+		font-size: 24px;
+		line-height: $login-input-height !important;
+		height: 45px !important;
+		margin-bottom:20px;
+	}
+
+	input, button {
+		color: $login-container-primary;
+		border: $login-input-border;
+		border-radius: $login-input-border-radius;
+		background-color: $login-container-secondary;
+	}
+	.label-name{
+		font-size: 24px;
+		color: white;
+		margin-bottom: 10px;
+	}
+
 }
