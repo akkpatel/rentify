@@ -1,0 +1,20 @@
+<div class="login-container">
+    <div class="login-name">
+        {{name}}
+    </div>
+    <div class="login-username">
+        <input required ng-model="credentials.username" type="text" placeholder="Username">
+    </div>
+    <div class="login-password">
+        <input required ng-model="credentials.password" type="password" placeholder="Password">
+    </div>
+    <div class="login-button">
+        <button ng-click="signIn()">Sign In</button>
+    </div>
+    <div class="new-user">
+        <h5><span>New To Rentify</span></h5>
+    </div>
+    <div class="register-button">
+        <button class="new-user-button" ng-click="pageSwitch(user_switch)">Create your Rentify account</button>
+    </div>
+</div>

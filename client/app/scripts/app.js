@@ -136,6 +136,16 @@ angular
           controller:'manageCtrl'
         }
       }
+    })
+    .state('howIt', {
+      url: '/howIt',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/works.html',
+          controller: 'works'
+        }
+      }
     });
   $urlRouterProvider.otherwise('/');
   $urlRouterProvider.when('/', ['$state','TokenService' ,
