@@ -1,17 +1,63 @@
-.works{
+.main-page{
 	width: 100%;
+	padding-left:50px;
+	padding-right: 50px;
+}
+.main-title
+{
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.works{
 	.work-title{
 		font-size: 22px;
 		font-weight: bold;
 	}
-	.work-main-text{
-		@extend .work-title;
-		color: white;
-		background-color: black;
-		border: 1px solid red;
-		
-		.span{
-			text-align: center;
-		}
+}
+.context-info{
+	text-align: center;
+	margin-top: 15px;
+}
+.stepOne-text{
+	@extend .work-title;
+	color: white;
+	background-color: black;
+	border: 1px solid red;	
+	padding-top: 25px;
+	padding-left: 70px;
+    padding-right: 70px;
+	.span{
+		text-align: center;
+		font-weight: bold;
+    	font-size: 20px;
+	}
+
+}
+
+.stepTwo-text{
+	@extend .work-title;
+	color: white;
+	background-color: gray;
+	padding-top: 25px;
+	padding-left: 70px;
+    padding-right: 70px;
+	.span{
+		text-align: center;
+		font-weight: bold;
+    	font-size: 20px;
+	}
+}
+
+.renter-stepone{
+	@extend .work-title;
+	color: white;
+	background-color: #4286f4;
+	padding-top: 25px;
+	padding-left: 70px;
+    padding-right: 70px;
+	.span{
+	    font-weight: bold;
+    	font-size: 20px;
 	}
 }
