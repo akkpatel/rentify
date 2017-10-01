@@ -127,6 +127,42 @@ angular
         }
       }
     })
+    .state('lend',{
+      url: '/lend',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/lend.html'
+        }
+      }
+    })
+    .state('insurance',{
+      url: '/insurance',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/insurance.html'
+        }
+      }
+    })
+    .state('howitworks',{
+      url: '/howitworks',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/howitworks.html'
+        }
+      }
+    })
+    .state('orders',{
+      url: '/orders',
+      parent: 'root',
+      views: {
+        'content@': {
+          templateUrl: 'views/orders.html'
+        }
+      }
+    })
     .state('manage',{
       url:'/manage',
       parent: 'root',
@@ -142,9 +178,9 @@ angular
       function ($state, TokenService){
                 console.log('check the current state: ', $state);
                     if(TokenService.getAuthToken()){
-                      $state.go('home');
+                      $state.go('login');
                     }else{
-                        $state.go('login');
+                        $state.go('home');
                     }
         }]);
   });
