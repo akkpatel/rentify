@@ -1,7 +1,6 @@
 .bold{
    font-family: 'Open Sans', Helvetica, sans-serif;
    font-weight: 400;
-   font-style: bold;
    font-size: 1.2em;
    line-height: 1.3em;
 }
@@ -19,25 +18,61 @@
 {
   font-size: 28px;
   color: black;
-  justify-content: left;
+  justify-content: center;
   @extend .bold;
-  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+.title-intro
+{
+  font-size: 28px;
+  color: black;
+  @extend .bold;
+}
+
+.sub-title9{
+  @extend .sub-title1;
+  margin-top: 50px !important;
 }
 
 .sub-sub-title1
 {
-  font-size: 20px;
-  color: blacks;
-  justify-content: left;
-  padding-left: 1.8rem;
+  font-size: 15px;
+  color: black;
+  justify-content: center;
+  padding-top: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  @extend .bold;
+}
+
+.image-height{
+  max-height: 236px;
+}
+
+.sub-sub-title9{
+  @extend .sub-sub-title1;
+  margin-top: 10px !important;
 }
 
 .image
 {
   background: no-repeat center;
   background-size: 175px;
-  width: 150px;
-  height: 75px;
+  width: 216px;
+  height: 217px;
   background-color: black;
   border: 1px solid black;
+  justify-content: center;
+  margin-top: 15px;
+  border-radius: 360%;
+}
+
+.meet-team{
+  margin-bottom: 75px;
+}
+
+.height-y{
+  height: 185px;
 }

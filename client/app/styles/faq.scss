@@ -1,5 +1,5 @@
 .bold{
-	ffont-family: 'Open Sans', Helvetica, sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 400;
   font-style: bold;
   font-size: 1.2em;
@@ -7,7 +7,7 @@
 }
 
 
-.title2
+.faq
 {
   font-size: 50px;
   color: black;
@@ -15,27 +15,36 @@
   @extend .bold;
 }
 
-.sub-title2
+.faq-sub
 {
   font-size: 28px;
   color: black;
   justify-content: left;
   @extend .bold;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
 }
 
-.sub-sub-title2
-{
-  font-size: 20px;
-  color: black;
-  justify-content: left;
-  padding-left: 1.8rem;
-}
-
-.sub-sub-sub-title2
+.faq-sub-sub
 {
   font-size: 20px;
   color: black;
   justify-content: left;
   padding-left: 2.8rem;
+  @extend .bold;
+}
+
+.faq-sub-sub-sub
+{
+  font-size: 15px !important;
+  color: black;
+  justify-content: left;
+  padding-left: 3.8rem;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+.faq-bot{
+  margin-bottom: 75px;
 }
