@@ -1,0 +1,25 @@
+<div>
+	<div class="grid-block small-12 align-center sub-title9">
+		Meet the Team
+	</div>
+	<div class="grid-block small-12">
+		<div class="grid-block vertical" ng-repeat="info in information">
+			<div class="grid-block align-center">
+				<img ng-src="{{info.imgSrc}}" class="founder-image"/>
+			</div>
+			<div class="grid-block align-center sub-title1">
+				<span>{{info.name}}</span>
+			</div>
+			<div class="grid-block align-center sub-title1">
+				<span>{{info.position}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="grid-block small-12">
+		<div class="grid-block align-center" ng-repeat="info in information">
+			<div class="grid-block founder-info">
+				<span>{{info.description}}</span>
+			</div>
+		</div>
+	</div>
+</div>
